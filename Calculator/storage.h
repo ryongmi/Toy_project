@@ -2,16 +2,16 @@
 #define _STORAGE_H_
 #include <string>
 
-class storage
+class Storage
 {
 private:
     std::string name;
-    int num1;
-    int num2;
+    int num;
 public:
-    storage(std::string name, int num1, int num2);
-    storage(const storage &source);
-    ~storage();
+    Storage(std::string name, int num);
+    Storage(const Storage &source);
+    ~Storage();
+    std::string get_name() const { return name; }
     void display() const;
 };
 
