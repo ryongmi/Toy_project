@@ -12,6 +12,7 @@ public:
     Storage(const Storage &source);
     ~Storage();
     std::string get_name() const { return name; }
+    int get_num() const { return num; }
     void display() const;
 };
 

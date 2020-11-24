@@ -15,6 +15,7 @@ public:
     void menu_add();
     void menu_delete();
     void menu_search() const;
+    void total();
     void menu_quit();
 };
 

@@ -76,6 +76,13 @@ void Menu::menu_search() const{
     }
 }
 
+void Menu::total() {
+    int total{0};
+    for (const Storage &view: menu)
+        total += view.get_num();
+    cout<<total<<endl;
+}
+
 void Menu::menu_quit() {
     cout<<"\nGood Bye!!"<<endl;
 }
